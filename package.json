@@ -31,6 +31,7 @@
     "@celo/utils": "0.1.9",
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@emotion/core": "^10.0.28",
+    "@hubspot/api-client": "^3.3.0",
     "@next/bundle-analyzer": "^9.3.5",
     "@sentry/browser": "^5.20.1",
     "@sentry/node": "^5.20.1",
