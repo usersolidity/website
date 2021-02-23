@@ -1,6 +1,7 @@
 const withImages = require('next-images')
 const envConfig = require('./env-config')
 const serverEnvConfig = require('./server-env-config')
+const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin')
 
 module.exports = withImages({
   experimental: {
@@ -39,6 +40,8 @@ module.exports = withImages({
       loader: 'ignore-loader',
       test: /\.test.ts$/,
     })
+
+    config.plugins.push(new DuplicatePackageCheckerPlugin())
 
     return config
   },
